@@ -13,5 +13,15 @@ class main{
         src_base = scn.nextLine();
         System.out.print("Enter target base: ");
         target_base = scn.nextLine();
+
+        // call the convert funtion to change user input tp int type
+        int[] arr_int = funcs.int_converter(num);
+
+        int index = 0;
+        while (index < arr_int.length)
+        {
+            System.out.print(arr_int[index]);
+            index++;
+        }
     }
 }
