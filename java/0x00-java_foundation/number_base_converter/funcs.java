@@ -1,5 +1,6 @@
 public class funcs
 {
+    //Convert user input(string) to correspondint int value
     public static int[] int_converter(String digits)
     {
         int index = 0;
@@ -12,5 +13,19 @@ public class funcs
             index++;
         }
         return arr_int;
+    }
+
+    // Convert any base to 10
+    public static int to_decimal(int base, int[] number)
+    {
+        int index = 0;
+        int total = 0;
+
+        while (index < number.length - 1)
+        {
+            total = total * base + number[index];
+            index++;
+        }
+        return total;
     }
 }

@@ -14,14 +14,9 @@ class main{
         System.out.print("Enter target base: ");
         target_base = scn.nextLine();
 
-        // call the convert funtion to change user input tp int type
+        // call the convert funtion to change user input to int type
         int[] arr_int = funcs.int_converter(num);
-
-        int index = 0;
-        while (index < arr_int.length)
-        {
-            System.out.print(arr_int[index]);
-            index++;
-        }
+        int base = Integer.parseInt(src_base);
+        test.func_dec(base, arr_int);
     }
 }
