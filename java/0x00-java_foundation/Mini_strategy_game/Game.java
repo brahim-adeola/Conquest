@@ -8,8 +8,6 @@ public class Game
         player.food = 50;
         player.army = 10;
 
-        System.out.println("Gold: " + player.gold);
-        System.out.println("Food: " + player.food);
-        System.out.println("Army: " + player.army);
+        player.showStatus();
     }
 }
